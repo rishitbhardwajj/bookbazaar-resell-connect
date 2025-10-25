@@ -4,6 +4,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Search, SlidersHorizontal } from "lucide-react";
 import BookCard from "@/components/BookCard";
 import { Button } from "@/components/ui/button";
+import midnightGarden from "@/assets/book-midnight-garden.jpg";
+import advancedPhysics from "@/assets/book-advanced-physics.jpg";
+import storiesKids from "@/assets/book-stories-kids.jpg";
+import dataStructures from "@/assets/book-data-structures.jpg";
+import artOfWar from "@/assets/book-art-of-war.jpg";
+import organicChemistry from "@/assets/book-organic-chemistry.jpg";
 
 const BuyBooks = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -14,42 +20,42 @@ const BuyBooks = () => {
   const books = [
     {
       id: "1",
-      title: "To Kill a Mockingbird",
+      title: "The Midnight Garden",
       author: "Harper Lee",
       price: 250,
       condition: "Good" as const,
       location: "Mumbai",
-      image: "/placeholder.svg",
+      image: midnightGarden,
       category: "Fiction",
     },
     {
       id: "2",
-      title: "Engineering Mathematics",
+      title: "Advanced Physics",
       author: "B.S. Grewal",
       price: 450,
       condition: "Used" as const,
       location: "Delhi",
-      image: "/placeholder.svg",
+      image: advancedPhysics,
       category: "College Books",
     },
     {
       id: "3",
-      title: "NCERT Physics Class 12",
+      title: "Stories for Kids",
       author: "NCERT",
       price: 150,
       condition: "Good" as const,
       location: "Bangalore",
-      image: "/placeholder.svg",
+      image: storiesKids,
       category: "School Books",
     },
     {
       id: "4",
-      title: "The Great Gatsby",
+      title: "Data Structures",
       author: "F. Scott Fitzgerald",
       price: 200,
       condition: "New" as const,
       location: "Pune",
-      image: "/placeholder.svg",
+      image: dataStructures,
       category: "Fiction",
     },
     {
@@ -59,37 +65,37 @@ const BuyBooks = () => {
       price: 550,
       condition: "Good" as const,
       location: "Chennai",
-      image: "/placeholder.svg",
+      image: organicChemistry,
       category: "College Books",
     },
     {
       id: "6",
-      title: "1984",
-      author: "George Orwell",
+      title: "The Art of War",
+      author: "Sun Tzu",
       price: 280,
       condition: "New" as const,
       location: "Kolkata",
-      image: "/placeholder.svg",
+      image: artOfWar,
       category: "Fiction",
     },
     {
       id: "7",
-      title: "NCERT Mathematics Class 10",
+      title: "Advanced Physics",
       author: "NCERT",
       price: 120,
       condition: "Used" as const,
       location: "Hyderabad",
-      image: "/placeholder.svg",
+      image: advancedPhysics,
       category: "School Books",
     },
     {
       id: "8",
-      title: "The Alchemist",
+      title: "The Midnight Garden",
       author: "Paulo Coelho",
       price: 180,
       condition: "Good" as const,
       location: "Ahmedabad",
-      image: "/placeholder.svg",
+      image: midnightGarden,
       category: "Fiction",
     },
   ];

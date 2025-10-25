@@ -4,6 +4,10 @@ import { Search, BookOpen, TrendingUp, Shield, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import BookCard from "@/components/BookCard";
 import heroImage from "@/assets/hero-books.jpg";
+import midnightGarden from "@/assets/book-midnight-garden.jpg";
+import advancedPhysics from "@/assets/book-advanced-physics.jpg";
+import storiesKids from "@/assets/book-stories-kids.jpg";
+import dataStructures from "@/assets/book-data-structures.jpg";
 
 const Home = () => {
   const categories = [
@@ -18,42 +22,42 @@ const Home = () => {
   const featuredBooks = [
     {
       id: "1",
-      title: "To Kill a Mockingbird",
+      title: "The Midnight Garden",
       author: "Harper Lee",
       price: 250,
       condition: "Good" as const,
       location: "Mumbai",
-      image: "/placeholder.svg",
+      image: midnightGarden,
       category: "Fiction",
     },
     {
       id: "2",
-      title: "Engineering Mathematics",
+      title: "Advanced Physics",
       author: "B.S. Grewal",
       price: 450,
       condition: "Used" as const,
       location: "Delhi",
-      image: "/placeholder.svg",
+      image: advancedPhysics,
       category: "College Books",
     },
     {
       id: "3",
-      title: "NCERT Physics Class 12",
+      title: "Stories for Kids",
       author: "NCERT",
       price: 150,
       condition: "Good" as const,
       location: "Bangalore",
-      image: "/placeholder.svg",
+      image: storiesKids,
       category: "School Books",
     },
     {
       id: "4",
-      title: "The Great Gatsby",
+      title: "Data Structures",
       author: "F. Scott Fitzgerald",
       price: 200,
       condition: "New" as const,
       location: "Pune",
-      image: "/placeholder.svg",
+      image: dataStructures,
       category: "Fiction",
     },
   ];
