@@ -10,17 +10,17 @@ const BookDetails = () => {
   // Mock data - in a real app, this would be fetched based on the id
   const book = {
     id: id,
-    title: "To Kill a Mockingbird",
-    author: "Harper Lee",
-    price: 250,
+    title: "The Secret Garden",
+    author: "Frances Hodgson Burnett",
+    price: 180,
     condition: "Good",
-    location: "Mumbai, Maharashtra",
+    location: "Ahmedabad, Gujarat",
     category: "Fiction",
-    description: "Classic American novel in good condition. Pages are clean with minimal wear. A timeless story of racial injustice and childhood innocence. Perfect for literature enthusiasts and students.",
-    isbn: "978-0-06-112008-4",
-    edition: "First Edition",
+    description: "A beloved children's classic in good condition. The story of a young girl who discovers a hidden garden and brings it back to life. Pages are clean with minimal wear. Perfect for young readers and collectors of classic literature.",
+    isbn: "978-0-14-062466-4",
+    edition: "Penguin Classics",
     language: "English",
-    pages: 324,
+    pages: 288,
     images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
     
     seller: {
