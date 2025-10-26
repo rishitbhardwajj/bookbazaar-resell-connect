@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Mail, Phone, Share2 } from "lucide-react";
 import { useParams } from "react-router-dom";
-import { toast } from "sonner";
+import { toast } f
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -21,7 +21,7 @@ const BookDetails = () => {
     edition: "First Edition",
     language: "English",
     pages: 324,
-    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
+    
     seller: {
       name: "Rahul Sharma",
       email: "rahul@example.com",
