@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Mail, Phone, Share2 } from "lucide-react";
 import { useParams } from "react-router-dom";
-import { toast } f
+import { toast } from "@/hooks/use-toast";
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -21,6 +21,7 @@ const BookDetails = () => {
     edition: "First Edition",
     language: "English",
     pages: 324,
+    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
     
     seller: {
       name: "Rahul Sharma",
@@ -31,11 +32,15 @@ const BookDetails = () => {
   };
 
   const handleContact = () => {
-    toast.success("Contact details copied to clipboard!");
+    toast({
+      title: "Contact details copied to clipboard!",
+    });
   };
 
   const handleShare = () => {
-    toast.success("Link copied to clipboard!");
+    toast({
+      title: "Link copied to clipboard!",
+    });
   };
 
   return (
